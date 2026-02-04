@@ -13,14 +13,14 @@ The system employs a **Hybrid Workflow**:
 2.  **Local Side (Anaconda Environment):** Lightweight real-time inference using a webcam to mark attendance directly into an **Excel spreadsheet**.
 
 **Key Features:**
-* **High Accuracy:** Uses InsightFace (ArcFace/RetinaFace) for state-of-the-art detection.
+* **High Accuracy:** Uses InsightFace (ArcFace) for state-of-the-art detection.
 * **Real-Time Processing:** Instantly detects faces via Webcam.
-* **Automated Export:** Attendance logs are automatically saved to `.xlsx` (Excel).
+* **Automated Export:** Attendance logs are automatically saved to `.csv` (Excel).
 * **Portable Model:** Uses a serialized `.pkl` file for easy deployment on local machines.
 
 ## 🛠️ Tech Stack
 * **Language:** Python
-* **Core Library:** InsightFace, OpenCV, Pandas (for Excel export)
+* **Core Library:** InsightFace, OpenCV, Pandas (for Excel export), SciPy (for classification)
 * **Environment:** Anaconda (Conda)
 * **Training/Preprocessing:** Google Colab
 * **Output:** Excel Report
@@ -40,7 +40,7 @@ To ensure performance efficiency, the workflow is split:
 ### Step-by-Step Guide
 1.  **Clone this Repository**
     ```bash
-    git clone [https://github.com/username/repo-name.git](https://github.com/username/repo-name.git)
+    git clone https://github.com/yosukeyung/Face-Recognition-Attendance-System.git
     cd repo-name
     ```
 
@@ -76,5 +76,7 @@ To ensure performance efficiency, the workflow is split:
 To protect privacy, the raw training images and the `.pkl` file containing biometric data are **excluded** from this repository. This repo focuses on the inference logic (`veriface.py`).
 
 ---
-**Author:** [Nama Kamu]
-*CS Student @ UPH Surabaya | Business Management*
+**Author:** Yosuke Yung
+*CS Student @ BINUS UNIVERSITY*
+
+
